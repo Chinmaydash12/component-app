@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import ClassComponents from "./5.ClassComponents";
+import FnComponent from "./6.FnComponent";
 
-function App() {
-  return (
+import "./index.css";
+
+
+export default function App(){
+  render(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <h1>Hello Coders<h1/>
+      <ClassComponents/>
+      <FnComponent/>
+    <div/>
   );
+  
 }
-
 export default App;
